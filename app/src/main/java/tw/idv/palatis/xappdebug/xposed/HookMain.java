@@ -61,7 +61,7 @@ public class HookMain implements IXposedHookLoadPackage {
                             if (packageInfo != null && packageInfo.applicationInfo != null)
                                 checkAndMakeDebuggable(packageInfo.applicationInfo, packageInfo.packageName, (int) param.args[2]);
                         } catch (Exception e) {
-                            XposedBridge.log(LOG_TAG + ": " + getStackTraceString(e));
+                            XposedBridge.log(LOG_TAG + "1: " + getStackTraceString(e));
                         }
                     }
                 }
@@ -80,7 +80,7 @@ public class HookMain implements IXposedHookLoadPackage {
                             if (appInfo != null)
                                 checkAndMakeDebuggable(appInfo, ((ApplicationInfo) param.getResult()).packageName, (int) param.args[2]);
                         } catch (Exception e) {
-                            XposedBridge.log(LOG_TAG + ": " + getStackTraceString(e));
+                            XposedBridge.log(LOG_TAG + "2: " + getStackTraceString(e));
                         }
                     }
                 }
@@ -102,7 +102,7 @@ public class HookMain implements IXposedHookLoadPackage {
                                 }
                             }
                         } catch (Exception e) {
-                            XposedBridge.log(LOG_TAG + ": " + getStackTraceString(e));
+                            XposedBridge.log(LOG_TAG + "3: " + getStackTraceString(e));
                         }
                     }
                 }
@@ -142,7 +142,7 @@ public class HookMain implements IXposedHookLoadPackage {
                             if (packageInfo != null && packageInfo.applicationInfo != null)
                                 checkAndMakeDebuggable(packageInfo.applicationInfo, packageInfo.packageName, (int) param.args[2]);
                         } catch (Exception e) {
-                            XposedBridge.log(LOG_TAG + ": " + getStackTraceString(e));
+                            XposedBridge.log(LOG_TAG + "4: " + getStackTraceString(e));
                         }
                     }
                 }
@@ -161,7 +161,7 @@ public class HookMain implements IXposedHookLoadPackage {
                             if (appInfo != null)
                                 checkAndMakeDebuggable(appInfo, ((ApplicationInfo) param.getResult()).packageName, (int) param.args[2]);
                         } catch (Exception e) {
-                            XposedBridge.log(LOG_TAG + ": " + getStackTraceString(e));
+                            XposedBridge.log(LOG_TAG + "5: " + getStackTraceString(e));
                         }
                     }
                 }
@@ -183,7 +183,7 @@ public class HookMain implements IXposedHookLoadPackage {
                                 }
                             }
                         } catch (Exception e) {
-                            XposedBridge.log(LOG_TAG + ": " + getStackTraceString(e));
+                            XposedBridge.log(LOG_TAG + "6: " + getStackTraceString(e));
                         }
                     }
                 }
